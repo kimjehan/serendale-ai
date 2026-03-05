@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import "./globals.css";
+import { Header } from "../widgets/Header/ui/Header";
 
 const font = Montserrat();
 
@@ -15,7 +16,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${font.className} antialiased bg-black`}>
+      <body className={`${font.className} antialiased bg-black text-white`}>
+        <Header />
         {children}
       </body>
     </html>
