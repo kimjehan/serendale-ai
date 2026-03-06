@@ -3,6 +3,7 @@ import { Montserrat } from "next/font/google";
 import "./globals.css";
 import { Header } from "../src/widgets/Header/ui/Header";
 import { Footer } from "../src/widgets/Footer/ui/Footer";
+import { ScreenProvider } from "@/src/shared/contexts/screenContext";
 
 const font = Montserrat();
 
@@ -17,10 +18,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${font.className} antialiased bg-black text-white`}>
-        <Header />
-        {children}
-        <Footer />
+      <body
+        className={`${font.className} antialiased bg-black text-white not-md:px-3`}
+      >
+        <ScreenProvider>
+          <Header />
+          {children}
+          <Footer />
+        </ScreenProvider>
       </body>
     </html>
   );

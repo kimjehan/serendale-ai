@@ -30,19 +30,21 @@ export const ReviewsSection = () => {
     <section className="container mx-auto flex flex-col items-center">
       <p
         className="
-            text-2xl
+            text-2xl not-md:text-xl
             bg-[linear-gradient(90deg,#FF3BFF_0%,#ECBFBF_38.02%,#5C24FF_75.83%,#D94FD5_100%)]
             bg-clip-text
             text-transparent"
       >
         Testimonial
       </p>
-      <h3 className="text-4xl font-medium pt-8">What Our Clients Are Saying</h3>
-      <div className="grid grid-cols-3 gap-5 pt-50">
+      <h3 className="lg:text-4xl md:text-3xl sm:text-2xl text-xl font-medium pt-8 ">
+        What Our Clients Are Saying
+      </h3>
+      <div className="lg:grid lg:grid-cols-3 md:grid md:grid-cols-2 grid grid-cols-1 sm:gap-5 gap-16 pt-50 not-md:pt-30">
         {reviews.map((v, i) => (
           <article
             key={i}
-            className="border border-neutral-900 shadow relative p-5 rounded-2xl flex flex-col gap-8  pt-16 bg-[linear-gradient(110.94deg,rgba(31,31,31,0.4)_18.07%,rgba(44,44,44,0.4)_37.31%,rgba(43,43,43,0.4)_40.55%,rgba(14,14,14,0.4)_75.52%)] text-center"
+            className="hover:scale-105 transition-all duration-500 border border-neutral-900 shadow relative p-5 rounded-2xl flex flex-col gap-8  pt-16 bg-[linear-gradient(110.94deg,rgba(31,31,31,0.4)_18.07%,rgba(44,44,44,0.4)_37.31%,rgba(43,43,43,0.4)_40.55%,rgba(14,14,14,0.4)_75.52%)] text-center"
           >
             <div className="rounded-full overflow-hidden border-4 border-neutral-800 absolute size-20 left-1/2 -translate-x-1/2 top-0 -translate-y-1/2">
               <img

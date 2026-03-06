@@ -7,7 +7,7 @@ import {
   PhoneOff,
 } from "lucide-react";
 
-const iconCN = "size-10 text-indigo-600";
+const iconCN = "md:size-10 sm:size-8 text-indigo-600";
 
 const advantages = [
   {
@@ -45,7 +45,7 @@ const advantages = [
 export const AdvantagesSection = () => {
   return (
     <section className="container mx-auto">
-      <article className="rounded-[48px] grid grid-cols-3 py-23 px-24 gap-15 bg-[linear-gradient(110.94deg,rgba(31,31,31,0.4)_18.07%,rgba(44,44,44,0.4)_37.31%,rgba(43,43,43,0.4)_40.55%,rgba(14,14,14,0.4)_75.52%)]">
+      <article className="lg:rounded-[48px] md:rounded-4xl sm:rounded-3xl rounded-lg lg:grid lg:grid-cols-3 md:grid md:grid-cols-2 sm:grid sm:grid-cols-1 sm:py-6 sm:px-6 lg:py-23 lg:px-24 md:py-10 md:px-10 py-4 px-4 space-y-10 gap-15 bg-[linear-gradient(110.94deg,rgba(31,31,31,0.4)_18.07%,rgba(44,44,44,0.4)_37.31%,rgba(43,43,43,0.4)_40.55%,rgba(14,14,14,0.4)_75.52%)]">
         {advantages.map((v, i) => (
           <div key={i} className="space-y-5">
             {v.icon}
