@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${font.className} antialiased bg-black text-white not-md:px-3`}
+        className={`${font.className} antialiased bg-black text-white px-3`}
       >
         <ScreenProvider>
           <Header />

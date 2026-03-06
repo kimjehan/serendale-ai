@@ -2,7 +2,7 @@ import { Button } from "@/src/shared/ui/Button";
 
 export const HeroSection = () => {
   return (
-    <section className="relative container mx-auto pb-100 not-md:pb-55">
+    <section className="relative container mx-auto pb-[clamp(11.25rem,-7.5rem+93.75vw,30rem)] sm:pb-50 md:pb-65 lg:pb-80 xl:pb-100 2xl:pb-130">
       <div className="relative z-10 flex flex-col gap-8 items-center">
         <div className="flex flex-col items-center">
           <h1

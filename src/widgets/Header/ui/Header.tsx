@@ -31,8 +31,8 @@ const HeaderMobile = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   return (
-    <div className="fixed left-4 right-4 top-0 bg-black z-30">
-      <header className="container mx-auto flex justify-between items-center py-12">
+    <div className="fixed left-0 right-0 top-0 bg-black/70  z-30">
+      <header className="container mx-auto flex justify-between backdrop-blur-xs items-center py-6 px-3">
         <Logo />
         <button
           className="cursor-pointer p-2 hover:bg-neutral-900 rounded-xl transition-colors duration-300"
